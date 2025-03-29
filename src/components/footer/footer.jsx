@@ -81,7 +81,9 @@ export default function Footer () {
 
           {/* Company */}
           <div className="lg:col-span-1">
-            <h3 className="text-white font-semibold mb-4 text-lg">Compañía</h3>
+            <h3 className="text-white font-semibold mb-4 text-lg">
+              Divendey
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -158,29 +160,6 @@ export default function Footer () {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="border-t border-gray-800 pt-8 pb-12">
-          <div className="max-w-md mx-auto text-center">
-            <h3 className="text-white font-semibold mb-2 text-lg">Suscríbete a nuestro newsletter</h3>
-            <p className="text-gray-400 mb-4">
-              Las últimas noticias, artículos y recursos, enviados a tu inbox semanalmente.
-            </p>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Ingresa tu email"
-                className="flex-1 px-4 py-2 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
-              />
-              <button
-                type="submit"
-                className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
-              >
-                Suscribirse
-              </button>
-            </form>
           </div>
         </div>
 

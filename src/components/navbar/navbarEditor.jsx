@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { CgDarkMode } from 'react-icons/cg';
+import { IoAlertCircleSharp } from "react-icons/io5";
 import {Link} from 'react-router-dom';
 
 export default function NavbarEditor() {
@@ -23,7 +25,12 @@ export default function NavbarEditor() {
                 d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            <Link to="/" className="text-xl font-bold text-purple-600">CVMaker</Link>
+            <Link to="/" className="text-xl font-bold text-purple-600 relative flex justify-center items-center">CVMaker
+              <div className='text-white px-1 mx-0.5 text-sm text-center bg-red-700 rounded-3xl flex justify-center items-center absolute -right-16'>
+                Beta
+                <IoAlertCircleSharp className='text-white justify-center flex items-center'/> 
+              </div>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -44,8 +51,9 @@ export default function NavbarEditor() {
             <a href="#features" className="text-sm font-medium hover:text-purple-600">
               Características
             </a>
-            <Link to="/templates" className="text-sm font-medium hover:text-purple-600">
-              Plantillas
+            <Link to="/templates" className="text-sm font-medium hover:text-purple-600 relative">
+              Plantillas 
+              
             </Link>
             <a href="#testimonials" className="text-sm font-medium hover:text-purple-600">
               Testimonios
@@ -53,6 +61,12 @@ export default function NavbarEditor() {
             <button className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
               Descargar CV
             </button>
+
+            <div className="flex justify-center">
+              <button>
+                <CgDarkMode/>
+              </button>
+            </div>
           </nav>
         </div>
 

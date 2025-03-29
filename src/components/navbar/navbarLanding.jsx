@@ -53,6 +53,10 @@ export default function NavbarLanding() {
             <button className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
               Crear CV Gratis
             </button>
+
+            <div>
+              
+            </div>
           </nav>
         </div>
 
